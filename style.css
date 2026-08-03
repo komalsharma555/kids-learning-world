@@ -1,0 +1,263 @@
+/* ===========================
+   Kids Learning World
+   Premium Style
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#6dd5fa,#ffffff,#a1ffce);
+
+min-height:100vh;
+
+color:#333;
+
+}
+
+/* ================= Header ================= */
+
+.topbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 30px;
+
+background:#ffffff;
+
+box-shadow:0 4px 15px rgba(0,0,0,.1);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+.logo{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#2196F3;
+
+}
+
+.top-icons{
+
+display:flex;
+
+gap:20px;
+
+align-items:center;
+
+font-size:22px;
+
+}
+
+.top-icons a{
+
+text-decoration:none;
+
+font-size:24px;
+
+}
+
+/* ================= Hero ================= */
+
+.hero{
+
+text-align:center;
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+color:#ff5722;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+margin-bottom:35px;
+
+}
+
+.hero button{
+
+background:#ff9800;
+
+color:#fff;
+
+border:none;
+
+padding:16px 40px;
+
+border-radius:50px;
+
+font-size:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.08);
+
+background:#ff6f00;
+
+}
+
+/* ================= Cards ================= */
+
+.menu{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+padding:40px;
+
+}
+
+.card{
+
+background:#fff;
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+text-decoration:none;
+
+color:#333;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card .emoji{
+
+font-size:60px;
+
+margin-bottom:15px;
+
+}
+
+.card h2{
+
+margin-bottom:10px;
+
+font-size:28px;
+
+}
+
+.card p{
+
+font-size:18px;
+
+color:#666;
+
+}
+
+/* ================= Continue ================= */
+
+.continue{
+
+padding:40px;
+
+}
+
+.continue h2{
+
+margin-bottom:20px;
+
+}
+
+.lesson{
+
+background:#fff;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+font-size:22px;
+
+}
+
+/* ================= Bottom Navigation ================= */
+
+.bottom-nav{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+display:flex;
+
+justify-content:space-around;
+
+background:#ffffff;
+
+padding:15px;
+
+box-shadow:0 -3px 12px rgba(0,0,0,.15);
+
+}
+
+.bottom-nav a{
+
+text-decoration:none;
+
+font-size:28px;
+
+transition:.3s;
+
+}
+
+.bottom-nav a:hover{
+
+transform:scale(1.2);
+
+}
