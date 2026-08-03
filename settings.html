@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings - Kids Learning World</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animation.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+⚙️ Settings
+</div>
+
+<div class="top-icons">
+
+<a href="index.html">🏠 Home</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>App Settings</h1>
+
+<p>Customize Your Learning Experience</p>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+
+<div class="emoji">🔊</div>
+
+<h2>Sound</h2>
+
+<p id="soundStatus">ON</p>
+
+<button onclick="toggleSound()">
+Toggle Sound
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">💾</div>
+
+<h2>Save Progress</h2>
+
+<button onclick="saveProgress()">
+Save
+</button>
+
+</div>
+
+<div class="card">
+
+<div class="emoji">🗑️</div>
+
+<h2>Reset Progress</h2>
+
+<button onclick="resetProgress()">
+Reset
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+function toggleSound(){
+
+let value=localStorage.getItem("sound");
+
+if(value=="off"){
+
+localStorage.setItem("sound","on");
+
+document.getElementById("soundStatus").innerHTML="ON";
+
+}else{
+
+localStorage.setItem("sound","off");
+
+document.getElementById("soundStatus").innerHTML="OFF";
+
+}
+
+}
+
+function saveProgress(){
+
+alert("✅ Progress Saved");
+
+}
+
+function resetProgress(){
+
+if(confirm("Reset all progress?")){
+
+localStorage.clear();
+
+alert("Progress Reset");
+
+location.reload();
+
+}
+
+}
+
+window.onload=function(){
+
+let value=localStorage.getItem("sound");
+
+if(value=="off"){
+
+document.getElementById("soundStatus").innerHTML="OFF";
+
+}else{
+
+document.getElementById("soundStatus").innerHTML="ON";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
