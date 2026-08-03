@@ -1,0 +1,193 @@
+/* ==========================
+   Premium Animations
+========================== */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+}
+
+100%{
+opacity:1;
+}
+
+}
+
+@keyframes slideUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes zoomIn{
+
+0%{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes rotate{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ==========================
+   Apply Animation
+========================== */
+
+body{
+
+animation:fadeIn .8s ease;
+
+}
+
+.hero{
+
+animation:slideUp .8s ease;
+
+}
+
+.card{
+
+animation:zoomIn .8s ease;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px) scale(1.03);
+
+}
+
+.emoji{
+
+display:inline-block;
+
+animation:float 2s infinite;
+
+}
+
+.logo{
+
+display:inline-block;
+
+animation:bounce 2s infinite;
+
+}
+
+.hero button{
+
+transition:.3s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.08);
+
+}
+
+.top-icons span{
+
+display:inline-block;
+
+animation:float 3s infinite;
+
+}
+
+.bottom-nav a{
+
+transition:.3s;
+
+}
+
+.bottom-nav a:hover{
+
+transform:scale(1.25);
+
+}
+
+.lesson{
+
+animation:slideUp 1s ease;
+
+}
