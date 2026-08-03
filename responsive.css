@@ -1,0 +1,169 @@
+/* ==========================
+   Responsive Design
+========================== */
+
+@media (max-width:1024px){
+
+.menu{
+
+grid-template-columns:repeat(2,1fr);
+
+padding:30px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.topbar{
+
+padding:15px;
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.hero{
+
+padding:50px 20px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.menu{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+gap:20px;
+
+}
+
+.card{
+
+padding:25px;
+
+}
+
+.card h2{
+
+font-size:24px;
+
+}
+
+.card p{
+
+font-size:16px;
+
+}
+
+.bottom-nav a{
+
+font-size:24px;
+
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.hero{
+
+padding:40px 15px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero button{
+
+width:100%;
+
+font-size:18px;
+
+padding:14px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.card .emoji{
+
+font-size:48px;
+
+}
+
+.lesson{
+
+font-size:18px;
+
+padding:18px;
+
+}
+
+.top-icons{
+
+font-size:18px;
+
+gap:12px;
+
+}
+
+.bottom-nav{
+
+padding:12px;
+
+}
+
+.bottom-nav a{
+
+font-size:22px;
+
+}
+
+}
