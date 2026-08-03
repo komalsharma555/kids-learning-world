@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learn - Kids Learning World</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animation.css">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+📚 Kids Learning
+</div>
+
+<div class="top-icons">
+
+<span id="coins">🪙 0</span>
+
+<span id="stars">⭐ 0</span>
+
+<a href="index.html">🏠</a>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Interactive Learning</h1>
+
+<p>ABC • Numbers • Colors • Animals</p>
+
+</section>
+
+<section class="lesson-container">
+
+<div class="lesson-card">
+
+<h1 id="lessonEmoji">🍎</h1>
+
+<h2 id="lessonTitle">A for Apple</h2>
+
+<p id="lessonDescription">
+Press Next to continue learning.
+</p>
+
+<div class="lesson-buttons">
+
+<button onclick="previousLesson()">
+⬅ Previous
+</button>
+
+<button onclick="speakLesson()">
+🔊 Listen
+</button>
+
+<button onclick="nextLesson()">
+Next ➡
+</button>
+
+</div>
+
+<div class="progress">
+
+<div id="progressBar"></div>
+
+</div>
+
+<p id="progressText">
+Lesson 1 / 26
+</p>
+
+</div>
+
+</section>
+
+<script src="storage.js"></script>
+<script src="sound.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
