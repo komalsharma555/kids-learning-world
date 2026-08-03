@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - Kids Learning World</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+👤 My Profile
+</div>
+
+<div class="top-icons">
+<a href="index.html">🏠 Home</a>
+</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Welcome Player</h1>
+
+<p>Your Learning Progress</p>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+<div class="emoji">🪙</div>
+<h2>Coins</h2>
+<h1 id="coinValue">0</h1>
+</div>
+
+<div class="card">
+<div class="emoji">⭐</div>
+<h2>Stars</h2>
+<h1 id="starValue">0</h1>
+</div>
+
+<div class="card">
+<div class="emoji">🏆</div>
+<h2>Level</h2>
+<h1 id="levelValue">1</h1>
+</div>
+
+<div class="card">
+<div class="emoji">📚</div>
+<h2>Lessons</h2>
+<h1 id="lessonValue">0</h1>
+</div>
+
+</section>
+
+<section class="lesson">
+
+<h2>Achievements</h2>
+
+<ul style="font-size:20px;line-height:40px;padding-left:30px;">
+
+<li>🎓 First Lesson Completed</li>
+
+<li>⭐ Earn 10 Stars</li>
+
+<li>🪙 Collect 100 Coins</li>
+
+<li>🏆 Reach Level 5</li>
+
+</ul>
+
+</section>
+
+<script>
+
+let data=JSON.parse(localStorage.getItem("kids_learning_world"));
+
+if(data){
+
+document.getElementById("coinValue").innerHTML=data.coins;
+
+document.getElementById("starValue").innerHTML=data.stars;
+
+document.getElementById("levelValue").innerHTML=data.level;
+
+document.getElementById("lessonValue").innerHTML=data.lesson;
+
+}
+
+</script>
+
+</body>
+
+</html>
