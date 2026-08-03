@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games - Kids Learning World</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="animation.css">
+</head>
+
+<body>
+
+<header class="topbar">
+<div class="logo">🎮 Kids Games</div>
+
+<div class="top-icons">
+<span id="coins">🪙 0</span>
+<span id="stars">⭐ 0</span>
+<a href="index.html">🏠</a>
+</div>
+</header>
+
+<section class="hero">
+<h1>Fun Learning Games</h1>
+<p>Play Games & Earn Rewards</p>
+</section>
+
+<section class="menu">
+
+<div class="card">
+<div class="emoji">🧠</div>
+<h2>Quiz Game</h2>
+<p>Answer simple questions</p>
+<button onclick="startQuiz()">Play</button>
+</div>
+
+<div class="card">
+<div class="emoji">🧩</div>
+<h2>Puzzle Game</h2>
+<p>Train your brain</p>
+<button onclick="startPuzzle()">Play</button>
+</div>
+
+<div class="card">
+<div class="emoji">🎯</div>
+<h2>Memory Game</h2>
+<p>Match the cards</p>
+<button onclick="startMemory()">Play</button>
+</div>
+
+</section>
+
+<section class="lesson">
+
+<h2 id="question">Choose a Game</h2>
+
+<div id="answerArea"></div>
+
+</section>
+
+<script>
+function startQuiz(){
+document.getElementById("question").innerHTML="Quiz Started!";
+document.getElementById("answerArea").innerHTML="<button>A</button> <button>B</button> <button>C</button>";
+}
+
+function startPuzzle(){
+document.getElementById("question").innerHTML="🧩 Puzzle Coming in Next Update";
+document.getElementById("answerArea").innerHTML="";
+}
+
+function startMemory(){
+document.getElementById("question").innerHTML="🎯 Memory Game Coming in Next Update";
+document.getElementById("answerArea").innerHTML="";
+}
+</script>
+
+<script src="game.js"></script>
+
+</body>
+</html>
