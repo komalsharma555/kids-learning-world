@@ -1,0 +1,86 @@
+<script>
+
+const lessons = [
+
+{emoji:"🍎",title:"A for Apple"},
+{emoji:"⚽",title:"B for Ball"},
+{emoji:"🐱",title:"C for Cat"},
+{emoji:"🐶",title:"D for Dog"},
+{emoji:"🐘",title:"E for Elephant"},
+{emoji:"🐟",title:"F for Fish"},
+{emoji:"🐐",title:"G for Goat"},
+{emoji:"🏠",title:"H for House"},
+{emoji:"🍦",title:"I for Ice Cream"},
+{emoji:"🧃",title:"J for Juice"},
+{emoji:"🔑",title:"K for Key"},
+{emoji:"🦁",title:"L for Lion"},
+{emoji:"🐒",title:"M for Monkey"},
+{emoji:"🪺",title:"N for Nest"},
+{emoji:"🍊",title:"O for Orange"},
+{emoji:"🦜",title:"P for Parrot"},
+{emoji:"👑",title:"Q for Queen"},
+{emoji:"🤖",title:"R for Robot"},
+{emoji:"☀️",title:"S for Sun"},
+{emoji:"🐯",title:"T for Tiger"},
+{emoji:"☂️",title:"U for Umbrella"},
+{emoji:"🎻",title:"V for Violin"},
+{emoji:"⌚",title:"W for Watch"},
+{emoji:"🎄",title:"X for Xmas Tree"},
+{emoji:"🪀",title:"Y for Yo-Yo"},
+{emoji:"🦓",title:"Z for Zebra"}
+
+];
+
+let current = 0;
+
+function loadLesson(){
+
+document.getElementById("lessonEmoji").innerHTML=lessons[current].emoji;
+
+document.getElementById("lessonTitle").innerHTML=lessons[current].title;
+
+document.getElementById("progressText").innerHTML="Lesson "+(current+1)+" / "+lessons.length;
+
+document.getElementById("progressBar").style.width=((current+1)/lessons.length*100)+"%";
+
+}
+
+function nextLesson(){
+
+if(current<lessons.length-1){
+
+current++;
+
+loadLesson();
+
+}
+
+}
+
+function previousLesson(){
+
+if(current>0){
+
+current--;
+
+loadLesson();
+
+}
+
+}
+
+function speakLesson(){
+
+speechSynthesis.cancel();
+
+const msg=new SpeechSynthesisUtterance(lessons[current].title);
+
+msg.lang="en-US";
+
+speechSynthesis.speak(msg);
+
+}
+
+loadLesson();
+
+</script>
